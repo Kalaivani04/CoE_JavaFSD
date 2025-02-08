@@ -1,0 +1,15 @@
+Processing Order O001 (EXPEDITED)
+Picked: Laptop from Aisle 1, Shelf 2, Bin 3
+Picked: Phone from Aisle 2, Shelf 3, Bin 4
+Order O001 completed successfully.
+
+Processing Order O002 (STANDARD)
+Picked: Tablet from Aisle 3, Shelf 1, Bin 2
+Picked: Laptop from Aisle 1, Shelf 2, Bin 3
+Order O002 completed successfully.
+
+Processing Order O003 (EXPEDITED)
+Picked: Phone from Aisle 2, Shelf 3, Bin 4
+Picked: Tablet from Aisle 3, Shelf 1, Bin 2
+Order O003 completed successfully.
+

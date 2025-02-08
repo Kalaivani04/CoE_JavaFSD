@@ -1,0 +1,3 @@
+Tablet (ID: P1003), Qty: 1, Location: Aisle 3, Shelf 1, Bin 2
+Laptop (ID: P1001), Qty: 3, Location: Aisle 1, Shelf 2, Bin 3
+Phone (ID: P1002), Qty: 8, Location: Aisle 2, Shelf 3, Bin 4
