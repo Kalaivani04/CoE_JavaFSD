@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Routines - ActiveTracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="my-routines.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 50px;
+            position: relative;
+        }
+        .logo img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        nav ul li a.active {
+            background-color: #d6752a;
+            color: white;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                text-align: center;
+                padding: 10px 0;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            nav.active {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <div class="logo-name">ActiveTracker</div>
+            <a href="index.html"><img src="assets/logo.png" alt="ActiveTracker Logo"></a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776;
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="create-routine.html">Create Routine</a></li>
+                <li><a href="#" class="active">My Routines</a></li>
+                <li><a href="progress-tracker.html">Progress Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- My Routines Section -->
+    <section class="my-routines">
+        <h1>My Saved Routines</h1>
+        
+        <div class="routine-container">
+            <ul id="routine-list"></ul>
+        </div>
+
+        <button id="clear-all" class="btn">Clear All Routines</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="ActiveTracker Logo">
+                <h2>ActiveTracker</h2>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create-routine.html">Create Routine</a></li>
+                    <li><a href="#">My Routines</a></li>
+                    <li><a href="progress-tracker.html">Progress Tracker</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <p>Get to know us</p>
+                <a href="#"><img src="assets/Instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="assets/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="home.js"></script>
+
+</body>
+</html>

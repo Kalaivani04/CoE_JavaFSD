@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Routine - ActiveTracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="create-routine.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 50px;
+            position: relative;
+        }
+        .logo img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        nav ul li a.active {
+            background-color: #d6752a;
+            color: white;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                text-align: center;
+                padding: 10px 0;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .menu-toggle {
+                display: block;
+            }
+            nav.active {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <div class="logo-name">ActiveTracker</div>
+            <a href="index.html"><img src="assets/logo.png" alt="ActiveTracker Logo"></a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776;
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Create Routine</a></li>
+                <li><a href="my-routines.html">My Routines</a></li>
+                <li><a href="progress-tracker.html">Progress Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Create Routine Section -->
+    <section class="create-routine">
+        <h1>Create Your Custom Workout Routine</h1>
+        
+        <form id="routine-form">
+            <label for="exercise-name">Exercise Name:</label>
+            <input type="text" id="exercise-name" placeholder="Enter exercise (e.g., Push-ups)" required>
+
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" min="1" max="60" required>
+
+            <label for="rest">Rest Time (seconds):</label>
+            <input type="number" id="rest" min="10" max="120" required>
+
+            <button type="submit" class="btn">Add Exercise</button>
+        </form>
+
+        <!-- List of Added Exercises -->
+        <div class="routine-list">
+            <h2>Workout Plan</h2>
+            <ul id="exercise-list"></ul>
+            <button id="save-routine" class="btn">Save Routine</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="ActiveTracker Logo">
+                <h2>ActiveTracker</h2>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Create Routine</a></li>
+                    <li><a href="my-routines.html">My Routines</a></li>
+                    <li><a href="progress-tracker.html">Progress Tracker</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <p>Get to know us</p>
+                <a href="#"><img src="assets/Instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="assets/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>
