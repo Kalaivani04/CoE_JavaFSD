@@ -1,0 +1,101 @@
+/* Form Container */
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1C1C1E; /* Deep Ocean */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.2); /* Aqua Glow */
+  font-family: Arial, sans-serif;
+}
+
+/* Form Heading */
+h2 {
+  text-align: center;
+  color: #E1E1E1; /* Frost White */
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Form Group (Input Container) */
+div {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: inline-block;
+  color: #00BCD4; /* Aqua Blue */
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #4DB6AC; /* Sea Green */
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #0F0F0F; /* Dark Abyss */
+  color: #E1E1E1; /* Frost White */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Fix width issues */
+}
+
+/* Input Focus Effect */
+input:focus {
+  border-color: #00BCD4; /* Aqua Blue */
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.6); /* Aqua Glow */
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1976D2; /* Royal Blue */
+  color: #E1E1E1; /* Frost White */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #00BCD4; /* Aqua Blue */
+  transform: translateY(-2px);
+}
+
+/* Disabled Button */
+button:disabled {
+  background-color: #4DB6AC; /* Sea Green */
+  cursor: not-allowed;
+}
+
+/* Error State */
+input.ng-invalid.ng-touched {
+  border-color: #E63946; /* Error Red */
+  box-shadow: 0 0 5px rgba(230, 57, 70, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    padding: 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

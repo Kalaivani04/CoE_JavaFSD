@@ -1,0 +1,12 @@
+
+
+/* Full Width Image */
+img {
+  width: 100vw; /* Full viewport width */
+  max-width: 100%; /* Prevent overflow */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* No rounded corners */
+  margin-bottom: 24px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+

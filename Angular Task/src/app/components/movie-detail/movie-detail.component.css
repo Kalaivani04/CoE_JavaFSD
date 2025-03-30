@@ -1,0 +1,198 @@
+/* Container for Movie Details */
+.movie-detail-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1C1C1E; /* Deep Ocean */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Movie Title */
+.movie-detail-container h2 {
+  font-size: 28px;
+  color: #E1E1E1; /* Frost White */
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+/* Movie Poster */
+.movie-detail-container img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  margin: 16px 0;
+  box-shadow: 0 4px 8px rgba(0, 188, 212, 0.4); /* Aqua Blue Glow */
+  transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+.movie-detail-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Movie Metadata */
+.movie-detail-container p {
+  font-size: 16px;
+  color: #4DB6AC; /* Sea Green */
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* Strong Text in Metadata */
+.movie-detail-container strong {
+  color: #00BCD4; /* Aqua Blue */
+  font-weight: 600;
+}
+
+/* Reviews Section */
+.review-card {
+  background-color: #0F0F0F; /* Dark Abyss */
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 6px rgba(0, 188, 212, 0.2); /* Aqua Glow */
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Review Cards */
+.review-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
+}
+
+/* Review Paragraphs */
+.review-card p {
+  margin: 6px 0;
+  color: #E1E1E1; /* Frost White */
+}
+
+/* No Reviews Message */
+.movie-detail-container p.no-reviews {
+  color: #888888;
+  font-style: italic;
+}
+
+/* Highlighted Review */
+.highlight-review {
+  border: 2px solid #FFD700; /* Gold for Highlight */
+  background-color: #1C1C1E; /* Deep Ocean */
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* Add Review Section */
+.add-review {
+  margin-top: 24px;
+  background-color: #0F0F0F; /* Dark Abyss */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Add Review Heading */
+.add-review h3 {
+  font-size: 22px;
+  color: #E1E1E1; /* Frost White */
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Textarea and Input Styling */
+.add-review textarea,
+.add-review input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #1976D2; /* Royal Blue */
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #1C1C1E; /* Deep Ocean */
+  color: #E1E1E1; /* Frost White */
+  transition: border-color 0.3s ease;
+}
+
+/* Focus Styles for Inputs and Textarea */
+.add-review textarea:focus,
+.add-review input:focus {
+  border-color: #00BCD4; /* Aqua Blue */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.3);
+}
+
+/* Submit Button */
+button {
+  background-color: #1976D2; /* Royal Blue */
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #00BCD4; /* Aqua Blue */
+}
+
+/* Button Disabled State */
+button:disabled {
+  background-color: #444B63;
+  cursor: not-allowed;
+}
+
+/* No Data Message */
+.movie-detail-container p.no-data {
+  color: #888888;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .movie-detail-container {
+    padding: 16px;
+  }
+
+  .movie-detail-container img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .add-review {
+    padding: 16px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .review-card {
+    padding: 12px;
+  }
+}
+
+/* Responsive for Small Screens */
+@media (max-width: 480px) {
+  .movie-detail-container h2 {
+    font-size: 24px;
+  }
+
+  .add-review h3 {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,30 @@
+<h2>Movie List</h2>
+<div class="movie-list-container">
+  <!-- Genre Dropdown -->
+  <div class="filter-container">
+    <select [(ngModel)]="selectedGenre" class="genre-dropdown">
+      <option *ngFor="let genre of genres" [value]="genre">{{ genre }}</option>
+    </select>
+  </div>
+
+  <!-- Movie List -->
+  <div *ngIf="(movies | genreFilter:selectedGenre).length > 0; else noMovies" class="movie-list">
+    <div *ngFor="let movie of movies | genreFilter:selectedGenre" class="movie-card">
+      <a [routerLink]="['/movies', movie.id]" class="movie-card-link">
+        <img
+          [src]="'http://localhost:8090/' + movie.id + '.jpg'"
+          alt="{{ movie.title }}"
+          class="movie-card-img"
+        />
+      </a>
+      <h3>{{ movie.title }}</h3>
+      <p>Rating: {{ movie.rating }} / 5</p>
+      <a [routerLink]="['/movies', movie.id]" class="view-details-link">View Details</a>
+    </div>
+  </div>
+
+  <!-- No Movies Found -->
+  <ng-template #noMovies>
+    <p class="no-movies">No movies found matching the criteria.</p>
+  </ng-template>
+</div>

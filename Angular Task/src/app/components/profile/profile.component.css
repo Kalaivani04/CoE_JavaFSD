@@ -1,0 +1,174 @@
+/* ✅ Profile Heading */
+.profile-heading {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #E1E1E1;; 
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ✅ User Details */
+.user-details {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-details p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #E1E1E1; /* Frost White */
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* 🎥 Review Heading */
+.review-heading {
+  margin-top: 24px;
+  font-size: 24px;
+  color: #00BCD4; /* Aqua Blue */
+  font-weight: 600;
+  text-align: center;
+}
+
+/* 📚 Review List */
+.review-list {
+  margin-top: 16px;
+  padding: 0;
+  list-style-type: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 🎬 Review Item */
+.review-item {
+  background-color: #1C1C1E; /* Deep Ocean */
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #4DB6AC; /* Sea Green */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 6px rgba(0, 188, 212, 0.2); /* Aqua Glow */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #E1E1E1; /* Frost White */
+}
+
+.review-item:hover {
+  background-color: #0F0F0F; /* Dark Abyss */
+  transform: scale(1.02);
+}
+
+/* 🎭 Movie Title Styling */
+.review-item strong {
+  color: #00BCD4; /* Aqua Blue for emphasis */
+}
+
+/* ❌ No Reviews Message */
+.no-reviews {
+  font-style: italic;
+  color: #4DB6AC; /* Sea Green */
+  margin-top: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* 🔥 Logout Button */
+.logout-btn {
+  margin-top: 24px;
+  padding: 12px 24px;
+  background-color: #1976D2; /* Royal Blue */
+  color: #E1E1E1; /* Frost White */
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 6px rgba(0, 188, 212, 0.15); /* Aqua Glow */
+}
+
+.logout-btn:hover {
+  background-color: #00BCD4; /* Aqua Blue */
+  transform: scale(1.05);
+}
+
+/* 🚨 Error Message */
+.error-msg {
+  color: #E63946; /* Error Red */
+  font-size: 16px;
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+/* 🔗 Login Link */
+.login-link {
+  color: #00BCD4; /* Aqua Blue */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-link:hover {
+  color: #4DB6AC; /* Sea Green */
+  text-decoration: underline;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .profile-heading {
+    font-size: 26px;
+  }
+
+  .user-details p {
+    font-size: 16px;
+  }
+
+  .review-heading {
+    font-size: 22px;
+  }
+
+  .review-item {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .logout-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-heading {
+    font-size: 22px;
+  }
+
+  .user-details p {
+    font-size: 14px;
+  }
+
+  .review-heading {
+    font-size: 20px;
+  }
+
+  .review-item {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .logout-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

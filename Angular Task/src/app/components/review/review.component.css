@@ -1,0 +1,94 @@
+/* 📚 Review Section */
+.review-section {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #1C1C1E; /* Deep Ocean */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 188, 212, 0.1); /* Aqua Glow */
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* 📝 Title */
+.review-section h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #00BCD4; /* Aqua Blue */
+    margin-bottom: 20px;
+}
+
+/* 📄 Form container */
+.review-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+/* 🏷️ Label styles */
+.review-section label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4DB6AC; /* Sea Green */
+    align-self: flex-start;
+}
+
+/* ✏️ Textarea & Input Styling */
+.review-section textarea,
+.review-section input[type="number"] {
+    width: calc(100% - 24px);
+    max-width: 550px;
+    padding: 12px;
+    border: 1px solid #4DB6AC; /* Sea Green border */
+    border-radius: 6px;
+    font-size: 14px;
+    color: #E1E1E1; /* Frost White */
+    background-color: #0F0F0F; /* Dark Abyss */
+    resize: vertical; /* Allow vertical resizing */
+    transition: border-color 0.3s ease;
+}
+
+.review-section textarea:focus,
+.review-section input[type="number"]:focus {
+    outline: none;
+    border-color: #00BCD4; /* Aqua Blue focus */
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.3); /* Aqua glow */
+}
+
+/* 🚀 Submit Button */
+.review-section button {
+    width: 100%;
+    max-width: 550px;
+    padding: 12px;
+    background-color: #1976D2; /* Royal Blue */
+    color: #E1E1E1; /* Frost White */
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.review-section button:hover {
+    background-color: #00BCD4; /* Aqua Blue */
+    transform: scale(1.03);
+}
+
+/* ❌ Disabled Button */
+.review-section button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .review-section {
+        padding: 16px;
+    }
+
+    .review-section h3 {
+        font-size: 20px;
+    }
+}

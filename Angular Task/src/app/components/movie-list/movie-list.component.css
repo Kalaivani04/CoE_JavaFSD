@@ -1,0 +1,118 @@
+/* 🌊 Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1C1C1E; /* Deep Ocean */
+  font-family: Arial, sans-serif;
+}
+
+/* 🎥 Movie List Container */
+.movie-list-container {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* 📝 Movie List Title */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #E1E1E1; /* Frost White for Contrast */
+}
+
+/* 🎬 Movie List Layout */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+/* 🎞️ Movie Card Styles */
+.movie-card {
+  width: 200px;
+  border: 1px solid #00BCD4; /* Aqua Blue for Highlight */
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 188, 212, 0.3);
+  background-color: #0F0F0F; /* Dark Abyss */
+  flex: 0 0 auto;
+  transition: transform 0.2s, box-shadow 0.3s ease-in-out;
+}
+
+/* ✨ Movie Card Hover Effect */
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 15px rgba(0, 188, 212, 0.5); /* Aqua Glow */
+}
+
+/* 🎥 Movie Image */
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* 🎭 Movie Title */
+.movie-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+  color: #E1E1E1; /* Frost White */
+}
+
+/* ⭐ Movie Description */
+.movie-card p {
+  margin: 5px 0;
+  color: #4DB6AC; /* Sea Green */
+  font-size: 0.9em;
+}
+
+/* 🔗 Movie Link Styles */
+.movie-card a {
+  text-decoration: none;
+  color: #00BCD4; /* Aqua Blue */
+  font-weight: bold;
+}
+
+/* 🎨 Movie Link Hover Effect */
+.movie-card a:hover {
+  text-decoration: underline;
+  color: #1976D2; /* Royal Blue */
+}
+
+/* 📚 No Movies Message */
+p.no-movies {
+  text-align: center;
+  font-size: 1.2em;
+  color: #888888;
+}
+
+/* 🎚️ Genre Dropdown */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.genre-dropdown {
+  padding: 8px 12px;
+  border: 1px solid #4DB6AC; /* Sea Green */
+  border-radius: 5px;
+  background-color: #0F0F0F; /* Dark Abyss */
+  color: #E1E1E1; /* Frost White */
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.genre-dropdown:focus {
+  border-color: #00BCD4; /* Aqua Blue */
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.5);
+}
+
+.genre-dropdown option {
+  background-color: #1C1C1E; /* Deep Ocean */
+  color: #E1E1E1; /* Frost White */
+}

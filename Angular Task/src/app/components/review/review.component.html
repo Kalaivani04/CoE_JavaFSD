@@ -1,0 +1,14 @@
+<div class="review-section">
+  <h3>Add a Review</h3>
+  <form (ngSubmit)="submitReview()" #reviewForm="ngForm">
+    <div>
+      <label for="reviewText">Your Review:</label>
+      <textarea id="reviewText" [(ngModel)]="reviewText" name="reviewText" required></textarea>
+    </div>
+    <div>
+      <label for="rating">Your Rating:</label>
+      <input type="number" id="rating" [(ngModel)]="rating" name="rating" required min="1" max="5">
+    </div>
+    <button type="submit" [disabled]="!reviewForm.valid">Submit</button>
+  </form>
+</div>

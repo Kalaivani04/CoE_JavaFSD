@@ -1,0 +1,30 @@
+<div class="movie-detail-container" *ngIf="movie; else noMovie">
+  <h2>{{ movie.title }}</h2>
+  <img [src]="'http://localhost:8090/' + movie.id + '.jpg'" alt="{{ movie.title }}" />
+  <p><strong>Genre:</strong> {{ movie.genre }}</p>
+  <p><strong>Release Date:</strong> {{ movie.releaseDate | date }}</p>
+  <p><strong>Rating:</strong> {{ movie.rating }} / 5</p>
+  <p><strong>Description:</strong> {{ movie.description }}</p>
+
+  <h3>Reviews:</h3>
+  <div *ngIf="movieReviews.length > 0; else noReviews">
+    <div *ngFor="let review of movieReviews" class="review-card" [ngClass]="{'highlight-review': review.rating === 5}">
+      <p><strong>{{ review.user }}:</strong> {{ review.review }}</p>
+      <p>Rating: {{ review.rating }} / 5</p>
+    </div>
+  </div>
+  <ng-template #noReviews>
+    <p>No reviews available for this movie.</p>
+  </ng-template>
+
+  <!-- Integrating ReviewComponent -->
+  <app-review 
+    [movieId]="movieId" 
+    [user]="user"
+    (reviewSubmitted)="onReviewSubmitted($event)">
+  </app-review>
+</div>
+
+<ng-template #noMovie>
+  <p>Movie not found!</p>
+</ng-template>
