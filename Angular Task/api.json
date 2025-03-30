@@ -1,0 +1,191 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "Inception",
+      "releaseDate": "2010-07-16",
+      "genre": "Science Fiction",
+      "rating": 4.8,
+      "description": "A skilled thief is given a chance at redemption if he can successfully plant an idea into a target's subconscious."
+    },
+    {
+      "id": "2",
+      "title": "The Dark Knight",
+      "releaseDate": "2008-07-18",
+      "genre": "Action",
+      "rating": 4.9,
+      "description": "Batman faces off against the Joker, a criminal mastermind who seeks to create chaos in Gotham City."
+    },
+    {
+      "id": "3",
+      "title": "Interstellar",
+      "releaseDate": "2014-11-07",
+      "genre": "Adventure",
+      "rating": 4.7,
+      "description": "A group of astronauts embarks on a mission through a wormhole in search of a new home for humanity."
+    },
+    {
+      "id": "4",
+      "title": "Harry Potter",
+      "releaseDate": "2002-04-12",
+      "genre": "Fantasy",
+      "rating": 4.5,
+      "description": "A young wizard, Harry Potter, discovers his magical heritage and battles the dark wizard Voldemort."
+    },
+    {
+      "id": "5",
+      "title": "The Matrix",
+      "releaseDate": "1999-03-31",
+      "genre": "Science Fiction",
+      "rating": 4.8,
+      "description": "A computer hacker learns the truth about reality and joins a rebellion against its controllers."
+    },
+    {
+      "id": "6",
+      "title": "The Shawshank Redemption",
+      "releaseDate": "1994-09-23",
+      "genre": "Drama",
+      "rating": 4.9,
+      "description": "Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency."
+    },
+    {
+      "id": "7",
+      "title": "The Godfather",
+      "releaseDate": "1972-03-24",
+      "genre": "Crime",
+      "rating": 4.9,
+      "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+    },
+    {
+      "id": "8",
+      "title": "Parasite",
+      "releaseDate": "2019-11-08",
+      "genre": "Thriller",
+      "rating": 4.6,
+      "description": "A poor family schemes to become employed by a wealthy family and infiltrates their household."
+    },
+    {
+      "id": "9",
+      "title": "Avengers: Endgame",
+      "releaseDate": "2019-04-26",
+      "genre": "Superhero",
+      "rating": 4.7,
+      "description": "The Avengers assemble one last time to undo Thanos' actions and restore order to the universe."
+    },
+    {
+      "id": "10",
+      "title": "Jurassic Park",
+      "releaseDate": "1993-06-11",
+      "genre": "Adventure",
+      "rating": 4.4,
+      "description": "A theme park featuring cloned dinosaurs turns into a disaster when the creatures escape and wreak havoc."
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "movieId": 1,
+      "review": "Mind-bending masterpiece!",
+      "rating": 5,
+      "user": "John Doe"
+    },
+    {
+      "id": "2",
+      "movieId": 2,
+      "review": "An amazing portrayal of justice and chaos.",
+      "rating": 5,
+      "user": "Jane Smith"
+    },
+    {
+      "id": "ddb7",
+      "movieId": 10,
+      "user": "Kalai",
+      "review": "Nice movie",
+      "rating": 4
+    },
+    {
+      "id": "72eb",
+      "movieId": 9,
+      "user": "Kalai",
+      "review": "A must watch",
+      "rating": 5
+    },
+    {
+      "id": "9499",
+      "movieId": 9,
+      "user": "Alex",
+      "review": "Good Movie",
+      "rating": 4
+    },
+    {
+      "id": "ddbd",
+      "movieId": 5,
+      "review": "Nice Movie",
+      "rating": 5,
+      "user": "Alex"
+    },
+    {
+      "id": "4288",
+      "movieId": 2,
+      "review": "Must Watch film",
+      "rating": 4,
+      "user": "Alex"
+    },
+    {
+      "id": "8d2d",
+      "movieId": 8,
+      "review": "Must Watch Film",
+      "rating": 4,
+      "user": "Alex"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "reviews": [
+        1
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "securepass",
+      "reviews": [
+        2
+      ]
+    },
+    {
+      "id": "8845",
+      "name": "Kalai",
+      "email": "kalai@example.com",
+      "password": "kalai123",
+      "reviews": [
+        "ddb7",
+        "72eb"
+      ]
+    },
+    {
+      "id": "ee02",
+      "name": "Alex",
+      "email": "alex@example.com",
+      "password": "alex123",
+      "reviews": [
+        "9499",
+        "ddbd",
+        "4288",
+        "8d2d"
+      ]
+    },
+    {
+      "id": "3be0",
+      "name": "Enzo",
+      "email": "enzo@example.com",
+      "password": "enzo",
+      "reviews": []
+    }
+  ]
+}
